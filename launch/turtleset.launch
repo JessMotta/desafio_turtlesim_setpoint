@@ -1,0 +1,8 @@
+<launch>
+  <!--Launch the turtlesim node-->
+    <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+
+    <!--Launch the program the ask wich point the user want send the turtle with a tolerance 0.1-->
+    <node pkg="turtlesim_setpoint" name="turtlebot_controller" type="gotogoal.py" output="screen"/>
+
+</launch>
